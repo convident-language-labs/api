@@ -1,6 +1,7 @@
 import openai
 #import json
-openai.api_key = "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"
+import os
+openai.api_key = API_KEY = os.environ.get("OPENAI_KEY")
 
 def pringles(replies, question):
     
